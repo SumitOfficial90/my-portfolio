@@ -1,0 +1,102 @@
+.download_cv_div {
+  padding-top: 120px;
+}
+.download_cv_div .download_cv {
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+  padding: 60px 0;
+}
+.download_cv_div .download_cv .top {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px 60px;
+  border: 1px solid #fff;
+  border-left: none;
+}
+.download_cv_div .download_cv .top h5 {
+  color: #8c8c8e;
+  padding-top: 10px;
+}
+.download_cv_div .download_cv .bottom .left {
+  border-right: 1px solid #fff;
+  padding-top: 30px;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes {
+  padding: 0 15px 0 30px;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes h4 {
+  font-size: 2.4rem;
+  padding: 15px 0 5px;
+  border-bottom: 1px solid #fff;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul {
+  padding-top: 30px;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul li {
+  padding-bottom: 10px;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul li h5 {
+  width: 112px;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul li span {
+  width: calc(100% - 112px);
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul li label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fafafc;
+  display: block;
+  white-space: nowrap;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul li h6 {
+  color: #fafafc;
+}
+.download_cv_div .download_cv .bottom .left .bottom_boxes ul :not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.download_cv_div .download_cv .bottom .right {
+  padding: 30px 30px 0 30px;
+}
+.download_cv_div .download_cv .bottom .right .right_box h4 {
+  font-size: 2.4rem;
+  padding: 15px 0 5px;
+  border-bottom: 1px solid #fff;
+}
+.download_cv_div .download_cv .bottom .right .right_box p {
+  padding-top: 15px;
+}
+.download_cv_div .download_cv .bottom .right .right_box ul {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.download_cv_div .download_cv .bottom .right .right_box ul li label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fafafc;
+}
+.download_cv_div .download_cv .bottom .right .right_box ul li span {
+  padding-left: 15px;
+}
+.download_cv_div .download_cv .bottom .right .right_box ul :not(:last-child) {
+  padding-bottom: 5px;
+}
+.download_cv_div .download_cv_btn {
+  padding: 30px 0;
+}
+.download_cv_div .download_cv_btn button {
+  font-size: 1.2rem;
+  padding: 12px 35px;
+  background: #ffc107;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #1e1e28;
+  display: inline-block;
+  transform: translateY(0px);
+  transition: all ease-in-out 0.4s;
+  border: none;
+}/*# sourceMappingURL=download.css.map */

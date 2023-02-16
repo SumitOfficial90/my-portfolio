@@ -1,0 +1,157 @@
+
+.download_cv_div  {
+
+    padding-top: 120px;
+
+    .download_cv  {
+
+        background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
+        padding: 60px 0;
+
+        .top  {
+
+            width: 100%;
+            max-width: 550px;
+            padding: 40px 60px;
+            border: 1px solid #fff;
+            border-left: none;
+
+            h5  {
+
+                color: #8c8c8e;
+                padding-top: 10px;
+            }
+        }
+
+        .bottom  {
+
+            .left  {
+
+                border-right: 1px solid #fff;
+                padding-top: 30px;
+
+                .bottom_boxes  {
+
+                    padding: 0 15px 0 30px;
+
+                    h4  {
+
+                        font-size: 2.4rem;
+                        padding: 15px 0 5px;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    ul  {
+
+                        padding-top: 30px;
+
+                        li  {
+
+                            padding-bottom: 10px;
+
+                            h5  {
+
+                                width: 112px;
+                            }
+
+                            span  {
+
+                                width: calc(100% - 112px);
+                                display: flex;
+                                justify-content: flex-end;
+                                text-align: right;
+                            }
+
+                            label  {
+
+                                font-size: 1.4rem;
+                                font-weight: 600;
+                                color: #fafafc;
+                                display: block;
+                                white-space: nowrap;
+                            }
+
+                            h6  {
+
+                                color: #fafafc;
+                            }
+                        }
+
+                        :not(:last-child)  {
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                        }
+                    }
+                }
+            }
+
+            .right  {
+
+                padding: 30px 30px 0 30px;
+
+                .right_box  {
+
+                    h4  {
+
+                        font-size: 2.4rem;
+                        padding: 15px 0 5px;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    p  {
+
+                        padding-top: 15px;
+                    }
+
+                    ul  {
+
+                        padding-top: 15px;
+                        padding-left: 10px;
+
+                        li  {
+
+                            label  {
+
+                                display: block;
+                                font-size: 1.4rem;
+                                font-weight: 600;
+                                color: #fafafc;
+                            }
+
+                            span  {
+
+                                padding-left: 15px;
+                            }
+                        }
+
+                        :not(:last-child)  {
+
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .download_cv_btn  {
+
+        padding: 30px 0;
+
+        button  {
+
+            font-size: 1.2rem;
+            padding: 12px 35px;
+            background: #ffc107;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            color: #1e1e28;
+            display: inline-block;
+            transform: translateY(0px);
+            transition: all ease-in-out .4s;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+  padding: 20px;
+  margin-top: 30px;
+}
+footer .footer_main p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #8c8c8e;
+}
+footer .footer_main a {
+  font-size: 1.2rem;
+  transition: 0.55s ease-in-out;
+  color: #fff;
+}
+footer .footer_main a:hover {
+  color: #ffc107;
+}/*# sourceMappingURL=footer.css.map */

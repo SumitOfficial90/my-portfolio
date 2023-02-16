@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3em;
+  color: #cacace;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fafafc;
+}
+
+h6 {
+  font-size: 1.3rem;
+  color: #8c8c8e;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.responsive_a a:hover {
+  color: #fafafc;
+  text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+}
+
+.banner_btn:hover {
+  transform: translateY(-2px);
+  color: #1e1e28;
+}
+
+.main_box {
+  background: #191923;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.progress.blue .progress-bar {
+  border-color: #ffc107;
+}
+
+@-webkit-keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes loading-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(144deg);
+  }
+}
+@-webkit-keyframes loading-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@-webkit-keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

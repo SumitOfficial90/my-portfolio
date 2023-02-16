@@ -1,0 +1,280 @@
+.aboutBanner {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+}
+.aboutBanner .aboutText {
+  flex-direction: column;
+  position: relative;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  padding: 30px;
+  z-index: 1;
+  transition: all ease-in-out 0.55s;
+}
+.aboutBanner .aboutText::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: -1;
+}
+
+.about_myself {
+  position: relative;
+  margin-top: -50px;
+  z-index: 2;
+}
+.about_myself .row .padding.div_flex {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+.about_myself .row .padding.div_flex .about_myself_image {
+  width: 100%;
+  max-width: 400px;
+}
+.about_myself .row .padding.div_flex .about_myself_image img {
+  width: 100%;
+  display: block;
+}
+.about_myself .row .padding {
+  padding: 15px;
+}
+.about_myself .row .padding .about_myself_text {
+  padding-top: 40px;
+}
+.about_myself .row .padding .about_myself_text h3 {
+  padding-bottom: 10px;
+}
+.about_myself .row .padding .about_myself_text p {
+  max-width: 100%;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab {
+  padding-top: 0px;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab ul li:not(:last-child) {
+  padding-right: 30px;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab ul li button {
+  background: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab ul li button::after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  top: 27px;
+  left: 0;
+  background: #cacace;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab ul li button:hover::after {
+  width: 100%;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab ul li button.active {
+  color: #ffc107;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab ul li button.active::after {
+  width: 100%;
+  background: #ffc107;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab .edu_content {
+  padding-top: 15px;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab .edu_content ul li {
+  padding-bottom: 10px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab .edu_content ul li p {
+  margin: 0;
+  color: #fff;
+  padding: 0 10px;
+}
+.about_myself .row .padding .about_myself_text .about_myself_tab .edu_content ul li span {
+  padding: 0 10px;
+  color: #cacace;
+}
+
+.project_main {
+  padding-top: 70px;
+}
+.project_main .heading h3 {
+  padding-bottom: 30px;
+}
+.project_main .padding {
+  padding: 15px;
+}
+.project_main .padding .project_main_div {
+  position: relative;
+  height: 100%;
+}
+.project_main .padding .project_main_div .images {
+  position: relative;
+  height: 350px;
+  transition: all ease-in-out 0.3s;
+}
+.project_main .padding .project_main_div .images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 3px;
+}
+.project_main .padding .project_main_div .images::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(45, 45, 58);
+  background: linear-gradient(9deg, rgb(45, 45, 58) 0%, rgba(43, 43, 53, 0.7651435574) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d2d3a",endColorstr="#2b2b35",GradientType=1);
+  border-radius: 3px;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+}
+.project_main .padding .project_main_div .images:hover::after {
+  opacity: 1;
+}
+.project_main .padding .project_main_div .images .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+.project_main .padding .project_main_div .images .text h4 {
+  padding-bottom: 10px;
+}
+.project_main .padding .project_main_div .images .text h6 {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #cacace;
+  padding-bottom: 15px;
+}
+.project_main .padding .project_main_div .images .text p {
+  font-size: 1.3rem;
+  padding: 5px 26px;
+  background: #ffc107;
+  font-weight: 600;
+  color: #1e1e28;
+  display: inline-block;
+}
+.project_main .padding .project_main_div .images .text img {
+  margin: 0 auto;
+  text-align: center;
+}
+.project_main .padding .project_main_div .images:hover .text {
+  opacity: 1;
+}
+.project_main .more_btn {
+  padding-top: 30px;
+}
+.project_main .more_btn a {
+  font-size: 1.4rem;
+  padding: 11px 30px;
+  background: #ffc107;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #000;
+}
+
+.contact_div {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.contact_div .heading h3 {
+  padding-bottom: 30px;
+}
+.contact_div .contact_div {
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  padding: 30px;
+  border-radius: 3px;
+}
+.contact_div .contact_div .contact_box:not(:last-child) {
+  padding-bottom: 30px;
+}
+.contact_div .contact_div .contact_box label {
+  width: 50px;
+  height: 50px;
+  background: #ffc107;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_div .contact_div .contact_box label img {
+  width: 16px;
+  height: 16px;
+}
+.contact_div .contact_div .contact_box input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  background: linear-gradient(159deg, #252532 0%, #23232d 100%);
+  border: none;
+  color: #fafafc;
+  padding-left: 20px;
+  padding-right: 15px;
+  box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  transition: 0.4s ease-in-out;
+}
+.contact_div .contact_div .contact_box button {
+  font-size: 1.4rem;
+  padding: 11px 30px;
+  background: #ffc107;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.contact_div .contact_div .contact_box.text_box label {
+  width: 50px;
+  height: 150px;
+  background: #ffc107;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+.contact_div .contact_div .contact_box.text_box label img {
+  width: 16px;
+  height: 16px;
+}
+.contact_div .contact_div .contact_box.text_box textarea {
+  width: 100%;
+  height: 150px;
+  overflow: auto;
+  outline: none;
+  background: linear-gradient(159deg, #252532 0%, #23232d 100%);
+  border: none;
+  color: #fafafc;
+  padding: 15px 20px;
+  box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  -webkit-transition: 0.4s ease-in-out;
+  resize: none;
+  transition: 0.4s ease-in-out;
+}/*# sourceMappingURL=about.css.map */

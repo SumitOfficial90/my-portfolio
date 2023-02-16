@@ -1,0 +1,120 @@
+.navigation  {
+    box-shadow: 0 1px 4px 0 rgba(15,15,20,.1);
+    z-index: 3;
+    width: 75px;
+    background: #20202a;
+    overflow: hidden;
+    transition: all .55s ease-in-out;
+
+    .humberger_box  {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 1px 4px 0 rgba(15,15,20,.1);
+        background: linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%);
+        transition: all ease-in-out .55s;
+
+        .humbergar {
+            padding: 30px;
+            position: relative;
+            
+            span  {
+              width: 15px;
+              height: 3px;
+              background: #8c8c8e;
+              display: block;
+              position: relative;
+              transition: all ease-in-out .3s;
+    
+              &::after  {
+                content: "";
+                width: 15px;
+                height: 3px;
+                top: 6px;
+                left: 0;
+                background: #8c8c8e;
+                position: absolute;
+                transition: all ease-in-out .3s;
+              }
+    
+              &::before  {
+                content: "";
+                width: 15px;
+                height: 3px;
+                top: -6px;
+                left: 0;
+                background: #8c8c8e;
+                position: absolute;
+                transition: all ease-in-out .3s;
+              }
+            }
+        }
+
+        &:hover .humbergar span,
+        &:hover .humbergar span:after,
+        &:hover .humbergar span:before  {
+            background: #fff;
+        }
+
+    }
+
+    .navInner  {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 83vh;
+        transition: all ease-in-out .99s;
+        white-space: nowrap;
+        margin-left: 100px;
+
+        ul  {
+
+            li  {
+
+                a  {
+                    padding: 7px 30px;
+                    display: inline-block;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    color: #cacace;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+
+                    &:hover  {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &.active  {
+        width: 230px;
+    }
+
+    &.active .humberger_box  {
+        justify-content: flex-start;
+    }
+
+    &.active .navInner  {
+        margin-left: 0;
+    }
+
+    &.active .humbergar span  {
+        transform: rotate(46deg);
+    }
+
+    &.active .humbergar span::after  {
+        transform: rotate(90deg);
+        top: 0;
+    }
+
+    &.active .humbergar span::before  {
+        display: none;
+    }
+    
+}

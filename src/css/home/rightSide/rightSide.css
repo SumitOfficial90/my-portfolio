@@ -1,0 +1,93 @@
+.navigation {
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  z-index: 3;
+  width: 75px;
+  background: #20202a;
+  overflow: hidden;
+  transition: all 0.55s ease-in-out;
+}
+.navigation .humberger_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+  transition: all ease-in-out 0.55s;
+}
+.navigation .humberger_box .humbergar {
+  padding: 30px;
+  position: relative;
+}
+.navigation .humberger_box .humbergar span {
+  width: 15px;
+  height: 3px;
+  background: #8c8c8e;
+  display: block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+.navigation .humberger_box .humbergar span::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  top: 6px;
+  left: 0;
+  background: #8c8c8e;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.navigation .humberger_box .humbergar span::before {
+  content: "";
+  width: 15px;
+  height: 3px;
+  top: -6px;
+  left: 0;
+  background: #8c8c8e;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.navigation .humberger_box:hover .humbergar span, .navigation .humberger_box:hover .humbergar span:after, .navigation .humberger_box:hover .humbergar span:before {
+  background: #fff;
+}
+.navigation .navInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 83vh;
+  transition: all ease-in-out 0.99s;
+  white-space: nowrap;
+  margin-left: 100px;
+}
+.navigation .navInner ul li a {
+  padding: 7px 30px;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #cacace;
+  transition: 0.2s ease-in-out;
+}
+.navigation .navInner ul li a:hover {
+  color: #fff;
+}
+.navigation.active {
+  width: 230px;
+}
+.navigation.active .humberger_box {
+  justify-content: flex-start;
+}
+.navigation.active .navInner {
+  margin-left: 0;
+}
+.navigation.active .humbergar span {
+  transform: rotate(46deg);
+}
+.navigation.active .humbergar span::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+.navigation.active .humbergar span::before {
+  display: none;
+}/*# sourceMappingURL=rightSide.css.map */

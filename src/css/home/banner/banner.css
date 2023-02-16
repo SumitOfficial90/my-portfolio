@@ -1,0 +1,155 @@
+.main_banner {
+  padding: 0 30px;
+  width: calc(100% - 365px);
+  position: relative;
+  transition: all ease-in-out 0.55s;
+  z-index: 3;
+  height: calc(100vh - 40px);
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #191923 #191923;
+}
+.main_banner::-webkit-scrollbar {
+  width: 2px;
+}
+.main_banner::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px #fff;
+  border-radius: 0;
+}
+.main_banner::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0;
+}
+.main_banner .swiper {
+  height: 100%;
+}
+.main_banner .banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  transition: all ease-in-out 0.55s;
+}
+.main_banner .banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+.main_banner .banner .swiper {
+  height: 100%;
+}
+.main_banner .banner .swiper .banner_text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  height: 100%;
+}
+.main_banner .banner .swiper .banner_text .banner_code {
+  white-space: nowrap;
+  padding-top: 10px;
+}
+.main_banner .banner .swiper .banner_text .banner_code .code_box {
+  width: 65px;
+}
+.main_banner .banner .swiper .banner_text .banner_code .code_box h3 {
+  color: #ffc107;
+  font-size: 1.4rem;
+}
+.main_banner .banner .swiper .banner_text .banner_code .code_box img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+.main_banner .banner .swiper .banner_text .banner_code .code_letter span {
+  font-size: 1.6rem !important;
+  padding: 0 10px;
+}
+.main_banner .banner .swiper .banner_text a {
+  font-size: 1.2rem;
+  padding: 12px 0px;
+  background: #ffc107;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  transition: all ease-in-out 0.4s;
+  display: flex;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: #000;
+  border-radius: 2px;
+}
+.main_banner .banner .swiper .banner_text a:hover {
+  transform: translateY(-6px);
+}
+.main_banner .banner .swiper .swiper-horizontal > .swiper-pagination-progressbar, .main_banner .banner .swiper .swiper-pagination-progressbar.swiper-pagination-horizontal {
+  height: 3px;
+  bottom: 0;
+  top: unset;
+}
+.main_banner .banner .swiper .swiper-horizontal > .swiper-pagination-progressbar span, .main_banner .banner .swiper .swiper-pagination-progressbar.swiper-pagination-horizontal span {
+  background: #fff;
+}
+.main_banner .perfonce_digit {
+  padding-top: 30px;
+  transition: all ease-in-out 0.55s;
+}
+.main_banner .perfonce_digit .digit span {
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 2.2rem;
+  display: block;
+  padding-right: 20px;
+}
+.main_banner .perfonce_digit .digit h6 {
+  color: #fff;
+}
+.main_banner .my_service {
+  padding-top: 50px;
+}
+.main_banner .my_service .heading h4 {
+  padding-bottom: 30px;
+}
+.main_banner .my_service .padding {
+  padding: 15px;
+}
+.main_banner .my_service .padding .service_box {
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  padding: 30px;
+  height: 100%;
+  border-bottom: 2px solid #ffc107;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+.main_banner .my_service .padding .service_box img {
+  margin: 0 auto 10px auto;
+}
+.main_banner .my_service .padding .service_box h4 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.main_banner .my_service .padding .service_box p {
+  color: #8c8c8e;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.main_banner .my_service .padding .service_box:hover {
+  transform: scale(1.05);
+}
+
+.mainHeader {
+  margin-left: -155px;
+}/*# sourceMappingURL=banner.css.map */
